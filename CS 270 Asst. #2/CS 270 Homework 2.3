@@ -1,0 +1,23 @@
+=begin
+Name: Sabrina Wallace, CS 270, Asst. 2.3
+Partner: None
+Description: Taken from 2.2 the previous program, makes it repeat until the user enters
+             ’q’ to quit.
+Input: Number
+Output: Even or odd
+=end
+
+print "Please enter a number (q to quit): "
+num = gets.chomp
+
+while num != "q"
+  if num.to_i % 2 == 0
+     puts "#{num} is even!"
+  else
+     puts "#{num} is odd!"
+end
+
+print "Please enter a number (q to quit): "
+num = gets.chomp
+
+end

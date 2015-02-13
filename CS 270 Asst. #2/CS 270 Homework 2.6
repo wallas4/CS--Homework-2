@@ -1,0 +1,17 @@
+print "Please enter a number: " #Asks user for number
+num = gets.to_i #Get's number into variable num 
+
+
+arr = [num]
+
+for i in (1..num)
+  arr[i] = i
+end
+
+arr = (1..num).to_a
+def mymethod(arr)
+    arr.inject{|sum,x| sum + x }
+end
+
+output = mymethod arr
+puts output
